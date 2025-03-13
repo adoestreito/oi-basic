@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @font-face {
+            font-family: 'XXII Ultimate-Black-Metal';
+            src: url('XXII Ultimate-Black-Metal.ttf') format('truetype');
+            font-weight: lighter;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'primma_handmade_dafont';
+            src: url('primma_handmade_dafont.ttf') format('truetype');
+            font-weight: lighter;
+            font-style: normal;
+        }
+
+        body {
+            background-image: url('sol_back.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            font-family: 'XXII Ultimate-Black-Metal', sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-attachment: scroll;
+            }
+        }
+
+        h1 {
+            font-family: 'primma_handmade_dafont';
+            font-size: 5rem;
+        }
+
+
+
+
+
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .glitch {
+            font-size: 10rem;
+            position: relative;
+            text-shadow: 0.05em 0 0 #c3e5ae, -0.03em -0.04em 0 #fea6a7,
+                0.025em 0.04em 0 #fffc00;
+            animation: glitch 725ms infinite;
+        }
+
+        .glitch span {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .glitch span:first-child {
+            animation: glitch 500ms infinite;
+            clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+            transform: translate(-0.04em, -0.03em);
+            opacity: 0.75;
+        }
+
+        .glitch span:last-child {
+            animation: glitch 375ms infinite;
+            clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+            transform: translate(0.04em, 0.03em);
+            opacity: 0.75;
+        }
+
+        @keyframes glitch {
+            0% {
+                text-shadow: 0.05em 0 0 #c3e5ae, -0.03em -0.04em 0 #fea6a7,
+                    0.025em 0.04em 0 #fffc00;
+            }
+
+            15% {
+                text-shadow: 0.05em 0 0 #c3e5ae, -0.03em -0.04em 0 #fea6a7,
+                    0.025em 0.04em 0 #fffc00;
+            }
+
+            16% {
+                text-shadow: -0.05em -0.025em 0 #c3e5ae, 0.025em 0.035em 0 #fea6a7,
+                    -0.05em -0.05em 0 #fffc00;
+            }
+
+            49% {
+                text-shadow: -0.05em -0.025em 0 #c3e5ae, 0.025em 0.035em 0 #fea6a7,
+                    -0.05em -0.05em 0 #fffc00;
+            }
+
+            50% {
+                text-shadow: 0.05em 0.035em 0 #c3e5ae, 0.03em 0 0 #fea6a7,
+                    0 -0.04em 0 #fffc00;
+            }
+
+            99% {
+                text-shadow: 0.05em 0.035em 0 #c3e5ae, 0.03em 0 0 #fea6a7,
+                    0 -0.04em 0 #fffc00;
+            }
+
+            100% {
+                text-shadow: -0.05em 0 0 #c3e5ae, -0.025em -0.04em 0 #fea6a7,
+                    -0.04em -0.025em 0 #fffc00;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="glitch">
+            <span aria-hidden="true">Ocaso Ilusion</span>
+            Ocaso Ilusion
+            <span aria-hidden="true">Ocaso Ilusion</span>
+        </p>
+        <h1>Proximamente</h1>
+
+
+
+</body>
+
+</html>
